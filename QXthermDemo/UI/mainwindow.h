@@ -15,6 +15,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void OnBtnOpen();
 private:
     Ui::MainWindow *ui;
 };

@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    connect(ui->btnOpen, SIGNAL(clicked()), this, SLOT(OnBtnOpen()));
 }
 
 MainWindow::~MainWindow()
@@ -13,3 +15,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::OnBtnOpen()
+{
+
+}
