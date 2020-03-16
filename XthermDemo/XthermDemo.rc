@@ -1,0 +1,275 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\XthermDemo.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\XthermDemo.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 XthermDemo"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "XthermDemo 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2018",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_XTHERMDEMO_DIALOG DIALOGEX 0, 0, 406, 338
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "XthermDemo"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_CARD,19,268,75,15,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "扫描设备",IDC_BUT_REFL,97,267,49,14
+    PUSHBUTTON      "停止采集",IDC_BUT_STOP,160,291,34,13
+    PUSHBUTTON      "开始采集",IDC_BUT_START,160,268,34,13
+    COMBOBOX        IDC_COMBO_COLOR,52,317,46,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "色板",IDC_STATIC,33,319,18,9
+    COMBOBOX        IDC_COMBO_SRC,96,291,46,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "宽动态模式",IDC_CHECK_TMPTYPE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,292,54,10
+    EDITTEXT        IDC_EDIT_EMISS,295,268,24,12,ES_AUTOHSCROLL
+    LTEXT           "发射率",IDC_STATIC,262,270,25,10
+    EDITTEXT        IDC_EDIT_HMI,295,284,24,12,ES_AUTOHSCROLL
+    LTEXT           "湿度",IDC_STATIC,262,286,25,10
+    EDITTEXT        IDC_EDIT_TMP,295,300,24,12,ES_AUTOHSCROLL
+    LTEXT           "反射温度",IDC_STATIC,261,301,35,10
+    EDITTEXT        IDC_EDIT_AIR,295,313,24,12,ES_AUTOHSCROLL
+    LTEXT           "环境温度",IDC_STATIC,261,315,35,10
+    EDITTEXT        IDC_EDIT_DIS,346,270,24,12,ES_AUTOHSCROLL
+    LTEXT           "距离",IDC_STATIC,326,271,18,10
+    EDITTEXT        IDC_EDIT_FIXTMP,346,285,24,12,ES_AUTOHSCROLL
+    LTEXT           "修正",IDC_STATIC,325,287,18,10
+    PUSHBUTTON      "修改",IDC_BUT_TMP,331,305,34,12
+    PUSHBUTTON      "校正",IDC_BUT_NUC,113,316,35,14
+    CONTROL         "",IDC_STATIC_SHOW,"Static",SS_BLACKFRAME | SS_NOTIFY,8,14,390,239
+    LTEXT           "静态",IDC_STATIC_ST,9,1,397,11
+    PUSHBUTTON      "测温点1",IDC_BUT_POS1,201,315,34,13,NOT WS_VISIBLE
+    PUSHBUTTON      "测温数据",IDC_BUT_TMPSET,203,298,31,13,NOT WS_VISIBLE
+    PUSHBUTTON      "8bit温度",IDC_BUT_SAVET,203,269,34,14,NOT WS_VISIBLE
+    PUSHBUTTON      "保存",IDC_BUT_SAVEORG,203,284,34,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Ctrl",IDC_BUT_TEST,159,317,21,12
+    EDITTEXT        IDC_EDIT_TEST,182,317,21,12,ES_AUTOHSCROLL
+    CONTROL         "录像",IDC_CHECK_RECORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,210,292,30,10
+    CONTROL         "测温",IDC_CHECK_TEMP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,210,270,30,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "XthermDemo.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "XthermDemo.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_XTHERMDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 399
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 331
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_XTHERMDEMO_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_COLOR, 0x403, 5, 0
+0xd7b0, 0xc8c8, "\000" 
+    IDC_COMBO_COLOR, 0x403, 5, 0
+0xdaba, 0xc8c8, "\000" 
+    IDC_COMBO_COLOR, 0x403, 7, 0
+0xb6c0, 0xecba, 0xc6bb, "\000" 
+    IDC_COMBO_COLOR, 0x403, 7, 0
+0xcfd7, 0xecba, 0xc6bb, "\000" 
+    IDC_COMBO_COLOR, 0x403, 7, 0
+0xb6c0, 0xccc2, 0xecba, "\000" 
+    IDC_COMBO_COLOR, 0x403, 6, 0
+0xcab2, 0xe7ba, 0x0031, 
+    IDC_COMBO_COLOR, 0x403, 6, 0
+0xcab2, 0xe7ba, 0x0032, 
+    IDC_COMBO_COLOR, 0x403, 6, 0
+0xdaba, 0xba2d, 0x00ec, 
+    IDC_COMBO_COLOR, 0x403, 8, 0
+0xabc4, 0xccc2, 0xba2d, 0x00ec, 
+    IDC_COMBO_COLOR, 0x403, 10, 0
+0xb6c0, 0xccc2, 0xecba, 0xb72d, 0x00db, 
+    IDC_COMBO_COLOR, 0x403, 7, 0
+0xecbb, 0xcfba, 0xabc9, "\000" 
+    IDC_COMBO_COLOR, 0x403, 5, 0
+0xecba, 0xb7cd, "\000" 
+    IDC_COMBO_SRC, 0x403, 9, 0
+0xadd4, 0xbcca, 0xfdca, 0xddbe, "\000" 
+    IDC_COMBO_SRC, 0x403, 8, 0
+0x5559, 0xca56, 0xbefd, 0x00dd, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_XTHERMDEMO_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 XthermDemo(&A)..."
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\XthermDemo.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
