@@ -50,7 +50,7 @@
        <item>
         <widget class="QCheckBox" name="chboxTemp">
          <property name="text">
-          <string>Temp</string>
+          <string>Temp2</string>
          </property>
         </widget>
        </item>
